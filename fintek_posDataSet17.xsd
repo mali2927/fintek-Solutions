@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fintek_posDataSet17" targetNamespace="http://tempuri.org/fintek_posDataSet17.xsd" xmlns:mstns="http://tempuri.org/fintek_posDataSet17.xsd" xmlns="http://tempuri.org/fintek_posDataSet17.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fintek_posConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fintek_posConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.fintek_Solutions.Properties.Settings.GlobalReference.Default.fintek_posConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ItemTableAdapter" GeneratorDataComponentClassName="ItemTableAdapter" Name="Item" UserDataComponentName="ItemTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fintek_posConnectionString (Settings)" DbObjectName="fintek_pos.dbo.Item" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Item_name FROM dbo.Item</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Item_name" DataSetColumn="Item_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fintek_posDataSet17" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="fintek_posDataSet17" msprop:Generator_DataSetName="fintek_posDataSet17">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Item" msprop:Generator_RowEvHandlerName="ItemRowChangeEventHandler" msprop:Generator_RowDeletedName="ItemRowDeleted" msprop:Generator_RowDeletingName="ItemRowDeleting" msprop:Generator_RowEvArgName="ItemRowChangeEvent" msprop:Generator_TablePropName="Item" msprop:Generator_RowChangedName="ItemRowChanged" msprop:Generator_RowChangingName="ItemRowChanging" msprop:Generator_TableClassName="ItemDataTable" msprop:Generator_RowClassName="ItemRow" msprop:Generator_TableVarName="tableItem" msprop:Generator_UserTableName="Item">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item_name" msprop:Generator_ColumnPropNameInRow="Item_name" msprop:Generator_ColumnPropNameInTable="Item_nameColumn" msprop:Generator_ColumnVarNameInTable="columnItem_name" msprop:Generator_UserColumnName="Item_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
